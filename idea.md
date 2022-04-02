@@ -1,5 +1,8 @@
 Quickstart
 ```
+import os
+import openai
+
 openai.api_key = "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"
 
 openai.Classification.create(
@@ -9,10 +12,9 @@ openai.Classification.create(
     ["I ate a chocolate bar.", "food"],
     ["Buy one bar.", "food"],
     ["This is my favourite bar.", "establishment"],
-["Make me a snack with those bars.", "food"]
+    ["Make me a snack with those bars.", "food"]
   ],
   query="Let's go to a bar.",
-  labels=["food", "est	¸-*+a
-blishment"],
+  labels=["food", "establishment"],
 )
 ```
